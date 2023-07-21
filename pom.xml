@@ -67,40 +67,6 @@
                 </configuration>
             </plugin>
 
-<!--            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.1.2</version>
-                <configuration>
-                    <properties>
-                        <configurationParameters>
-                            cucumber.execution.parallel.config.fixed.parallelism=24
-                        </configurationParameters>
-                    </properties>
-                </configuration>
-            </plugin>-->
-
-            <!--<plugin>
-                <groupId>com.github.temyers</groupId>
-                <artifactId>cucumber-jvm-parallel-plugin</artifactId>
-                <version>5.0.0</version>
-                <executions>
-                    <execution>
-                        <id>generateRunners</id>
-                        <phase>generate-test-sources</phase>
-                        <goals>
-                            <goal>generateRunners</goal>
-                        </goals>
-                        <configuration>
-                            &lt;!&ndash; Путь к папке с функционалами (feature-файлы) &ndash;&gt;
-                            <featuresDirectory>src/test/resources/features</featuresDirectory>
-                            &lt;!&ndash; Пакет для сохранения сгенерированных тестовых классов &ndash;&gt;
-                            <cucumberOutputDir>target/test-classes/cucumber</cucumberOutputDir>
-                            &lt;!&ndash; Количество потоков (можно задать число ядер CPU или другое подходящее число) &ndash;&gt;
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>-->
         </plugins>
     </build>
 
@@ -124,14 +90,6 @@
             <version>7.2.3</version>
             <scope>test</scope>
         </dependency>
-
-<!--        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit-platform-engine</artifactId>
-            <version>7.2.3</version>
-            <scope>test</scope>
-        </dependency>-->
-
 
         <dependency>
             <groupId>io.cucumber</groupId>
