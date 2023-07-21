@@ -1,0 +1,1 @@
+# template_junit_cucumber_rest_assured_allure
